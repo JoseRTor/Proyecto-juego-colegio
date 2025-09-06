@@ -9,10 +9,13 @@ import { Final } from "./escenas/final.js";
 
 const config = {
   type: Phaser.AUTO,
+  parent: "contenedor-juego",
   width: 800,
   height: 500,
-  margin: "2rem",
-  parent: "contenedor-juego",
+  scale: {
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+  },
   scene: [
     Game,
     GameDos,
@@ -25,10 +28,8 @@ const config = {
   ],
   physics: {
     default: "arcade",
-    arcade: {
-      debug: false,
-    },
+    arcade: { debug: false },
   },
 };
 
-var game = new Phaser.Game(config);
+new Phaser.Game(config);
