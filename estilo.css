@@ -1,12 +1,11 @@
 body {
   font-family: "Bahnschrift", "Arial Narrow", "Arial Black", sans-serif;
-  /* text-align: center; */
+  text-align: center;
   background: radial-gradient(circle at top, #0a0a33, #000010);
   color: white;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  height: 100vh;
 }
 
 h1 {
@@ -14,7 +13,6 @@ h1 {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
     0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
   animation: glow 2s infinite alternate;
-  /* text-align: center; */
 }
 
 @keyframes glow {
@@ -28,12 +26,6 @@ h1 {
   }
 }
 
-.contenedor-juego {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
 .contenedor-consejos {
   position: fixed;
   bottom: 0;
@@ -41,7 +33,6 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 3rem;
   padding: 15px 0;
   background: rgba(0, 0, 0, 0.7);
 }
@@ -56,17 +47,13 @@ h1 {
 }
 
 .consejo.amarillo {
-  background-color: #ffd700;
+  background-color: #ffd700; 
   color: black;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 .consejo.verde {
-  background-color: #00ff88;
+  background-color: #00ff88; 
   color: white;
   text-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
-}
-
-canvas {
-  margin: 0 auto;
 }

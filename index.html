@@ -4,23 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mi primer juego</title>
-
-    <base href="/Proyecto-juego-colegio/" />
-
-    <link rel="icon" type="image/x-icon" href="./icono.ico" />
-    <link rel="stylesheet" href="./estilo.css?v=1" />
+    <link rel="icon" type="image/x-icon" href="icono.ico" />
+    <link rel="stylesheet" href="estilo.css" />
   </head>
   <body>
-    <main id="contenedor-juego" class="contenedor-juego"></main>
+    <div class="container">
+      <h1>Jueguito de naves súper chulo</h1>
+    </div>
 
-    <footer class="contenedor-consejos">
-      <p class="consejo amarillo">1.- Pulsa espacio para disparar!!!</p>
+    <div class="contenedor-consejos">
+      <p class="consejo amarillo">1.- Pulsa espacio para disparar</p>
       <p class="consejo verde">
         2.- Cada nivel necesita 100 de score más para continuar.
       </p>
-    </footer>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.24.0/dist/phaser.js"></script>
-    <script type="module" src="./index.js?v=1"></script>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.24.0/dist/phaser.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
